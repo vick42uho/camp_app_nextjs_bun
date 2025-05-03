@@ -1,8 +1,12 @@
 import { CircleUserRound } from 'lucide-react';
 
-const UserIcon = () => {
+type UserIconProps = {
+  className?: string;
+}
+
+const UserIcon = ({ className }: UserIconProps) => {
   return (
-    <CircleUserRound />
+    <CircleUserRound className={className} />
   )
 }
 export default UserIcon
